@@ -1,14 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #e1ddd1;
   background-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --primary-font-color: #e1ddd1;
+  --secondary-font-color: #afada8;
+  --tertiary-font-color: #9c9c9c;
+
+  --primary-comp-color: #141619;
+  --secondary-comp-color: #24262a;
+
+  --bar-color: #222527;
+
+  --footer-color: #121212;
+
+  --selection-color: #217f4a;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0386d0;
+}
+
+a:is(:hover, :focus) {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+li {
+  list-style: none;
 }
