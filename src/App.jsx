@@ -8,7 +8,7 @@ import ProfilePage from "./Pages/Profile";
 import LoginPage from "./Pages/Login";
 
 const router = createBrowserRouter([
-  { index: true, path: "/login", element: <LoginPage /> },
+  { path: "/login", element: <LoginPage /> },
   {
     path: "/",
     element: <Layout />,

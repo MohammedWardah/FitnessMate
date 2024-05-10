@@ -1,5 +1,12 @@
+import Home from "../Components/Home/Home";
+import PageTemplate from "../Components/UI/PageTemplate";
+
 const HomePage = () => {
-  return <div>Home page</div>;
+  return (
+    <PageTemplate title={"Activity & Health Overview"}>
+      <Home />
+    </PageTemplate>
+  );
 };
 
 export default HomePage;
