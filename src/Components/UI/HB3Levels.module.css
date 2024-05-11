@@ -1,0 +1,79 @@
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  padding: 0 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.bar span {
+  color: var(--secondary-font-color);
+  width: 20%;
+}
+
+.barContainer {
+  background: linear-gradient(
+    to right,
+    #1f462e 0%,
+    #1f462e 33%,
+    #0b3c24 33%,
+    #0b3c24 66%,
+    #31221b 66%,
+    #31221b 100%
+  );
+  width: 80%;
+  height: 20px;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.barFill {
+  height: 100%;
+  position: absolute;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  animation: fillAnimation 1s ease-out;
+}
+
+.lowFill {
+  background-color: #73c895;
+}
+
+.mediumFill {
+  background-color: #0e9654;
+}
+
+.highFill {
+  background-color: #d98b15;
+}
+
+.indicator {
+  position: relative;
+}
+
+.indicator span:first-of-type {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 30%;
+  top: 21px;
+  text-align: center;
+  width: 1rem;
+}
+
+.indicator span:last-of-type {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 63%;
+  top: 21px;
+  text-align: center;
+  width: 1rem;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0%;
+  }
+}

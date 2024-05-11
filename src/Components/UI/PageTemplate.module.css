@@ -1,7 +1,13 @@
-.title {
-  font-size: 1.75rem;
-}
-
 .container {
   margin: 1rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.bottomFiller {
+  height: 55px;
 }

@@ -1,0 +1,62 @@
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  padding: 0 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.bar span {
+  color: var(--secondary-font-color);
+  width: 20%;
+}
+
+.barContainer {
+  background-color: var(--secondary-comp-color);
+  width: 80%;
+  height: 20px;
+  border-radius: 1rem;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  animation: fillAnimation 1s ease-out;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0%;
+  }
+}
+
+.indicator {
+  position: relative;
+}
+
+.indicator span:first-of-type {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 1%;
+  top: 0px;
+}
+
+.indicator span:nth-of-type(2) {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 40%;
+  top: 0px;
+  text-align: center;
+}
+
+.indicator span:last-of-type {
+  font-size: 0.75rem;
+  position: absolute;
+  left: 78%;
+  top: 0px;
+  text-align: right;
+}

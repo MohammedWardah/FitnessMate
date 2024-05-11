@@ -1,0 +1,203 @@
+/* Overview start */
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.section span {
+  font-size: 1.2rem;
+}
+
+.section img {
+  margin-right: 0.5rem;
+  width: 15px;
+  height: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+}
+
+.barCals,
+.barSteps,
+.barTime {
+  width: 55%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.barFillCals,
+.barFillSteps,
+.barFillTime {
+  border-radius: 5px;
+  height: 100%;
+  animation: fillAnimation 1s ease-out;
+}
+
+.barCals {
+  background-color: #31221b;
+}
+
+.barSteps {
+  background-color: #312a18;
+}
+
+.barTime {
+  background-color: #1f2932;
+}
+
+.barFillCals {
+  background-color: #c9611b;
+}
+
+.barFillSteps {
+  background-color: #e5ae00;
+}
+
+.barFillTime {
+  background-color: #44a5eb;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0%;
+  }
+}
+
+/* Start a workout start */
+.start {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.start > div {
+  background-color: var(--secondary-comp-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.start img,
+.burger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start p {
+  margin-top: 3.25rem;
+}
+
+.burger > div {
+  height: 1px;
+  width: 20px;
+  background-color: #fff;
+  margin-top: 7px;
+}
+
+.burger > div:first-child {
+  margin-top: 0;
+}
+
+/* Weekly workout summary start */
+.weekly {
+  display: flex;
+  justify-content: space-around;
+}
+
+.weekly p {
+  color: var(--secondary-font-color);
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.day {
+  width: 40px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.day > div:first-child,
+.day > div:nth-child(2),
+.day > div:last-child {
+  height: 100%;
+  width: 12px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.day > div:first-child {
+  background-color: #31221b;
+}
+
+.day > div:nth-child(2) {
+  background-color: #312a18;
+}
+
+.day > div:last-child {
+  background-color: #1f2932;
+}
+
+.day > div > div {
+  border-radius: 2px;
+  animation: fillAnimationV 1s ease-out;
+}
+
+@keyframes fillAnimationV {
+  0% {
+    height: 0%;
+  }
+}
+
+.day > div:first-child > div {
+  background-color: #c9611b;
+}
+
+.day > div:nth-child(2) > div {
+  background-color: #e5ae00;
+}
+
+.day > div:last-child > div {
+  background-color: #44a5eb;
+}
+
+/* Sleep start */
+.sleep > div {
+  background-color: #302f55;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 60px;
+  width: 23px;
+  border-radius: 2px;
+}
+
+.sleep > div > div {
+  background-color: #3942a3;
+  width: 100%;
+  border-radius: 2px;
+  animation: fillAnimationV 1s ease-out;
+}
+
+.hours {
+  font-size: 0.9rem !important;
+  color: var(--tertiary-font-color);
+  margin-top: 3px;
+}

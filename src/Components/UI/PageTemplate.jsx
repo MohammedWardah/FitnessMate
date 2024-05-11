@@ -5,6 +5,7 @@ const PageTemplate = ({ title, children }) => {
     <main className={styles.container}>
       <h1 className={styles.title}>{title}</h1>
       {children}
+      <div className={styles.bottomFiller}></div>
     </main>
   );
 };
