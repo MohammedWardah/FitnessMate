@@ -1,5 +1,5 @@
+import PageTemplate from "../Components/Layout/PageTemplate";
 import Home from "../Components/Home/Home";
-import PageTemplate from "../Components/UI/PageTemplate";
 
 const HomePage = () => {
   return (

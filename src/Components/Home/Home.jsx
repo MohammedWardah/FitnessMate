@@ -8,10 +8,10 @@ import running from "../../assets/UI/running.png";
 import bicycle from "../../assets/UI/bicycle.png";
 
 import OuterComp from "../UI/OuterComp";
-
-import { overView } from "../../userData.js";
 import HorizontalBar from "../UI/HorizontalBar.jsx";
 import HB3Levels from "../UI/HB3Levels.jsx";
+
+import { overView } from "../../userData.js";
 
 const Home = () => {
   return (

@@ -1,12 +1,44 @@
+import { useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import styles from "./Footer.module.css";
 
-let isActive = false;
-
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState({
+    diet: false,
+    home: false,
+    watch: false,
+    profile: false,
+  });
+
+  // Color icon based on location
+  useEffect(() => {
+    const currentPath = location.pathname;
+    setActiveLink({
+      diet: currentPath === "/Diet",
+      home: currentPath === "/",
+      watch: currentPath === "/Watch",
+      profile: currentPath === "/Profile",
+    });
+  }, [location.pathname]);
+
+  // Navigate on icon click
+  const navigateAndSetActive = (link) => {
+    let path = "/";
+    if (link === "Diet") path = "/Diet";
+    else if (link === "Watch") path = "/Watch";
+    else if (link === "Profile") path = "/Profile";
+
+    navigate(path);
+  };
+
   return (
     <footer className={styles.footer}>
       <svg
-        className={isActive ? styles.active : ""}
+        onClick={() => navigateAndSetActive("Diet")}
+        className={activeLink.diet ? styles.active : ""}
         width="32"
         height="32"
         viewBox="0 0 32 32"
@@ -41,9 +73,9 @@ const Footer = () => {
           strokeLinejoin="round"
         />
       </svg>
-
       <svg
-        className={isActive ? styles.active : ""}
+        onClick={() => navigateAndSetActive("Home")}
+        className={activeLink.home ? styles.active : ""}
         width="28"
         height="28"
         viewBox="0 0 28 28"
@@ -54,9 +86,9 @@ const Footer = () => {
           fill="#B2B2B2"
         />
       </svg>
-
       <svg
-        className={isActive ? styles.active : ""}
+        onClick={() => navigateAndSetActive("Watch")}
+        className={activeLink.watch ? styles.active : ""}
         width="36"
         height="36"
         viewBox="0 0 36 36"
@@ -72,9 +104,9 @@ const Footer = () => {
           fill="#B2B2B2"
         />
       </svg>
-
       <svg
-        className={isActive ? styles.active : ""}
+        onClick={() => navigateAndSetActive("Profile")}
+        className={activeLink.profile ? styles.active : ""}
         width="24"
         height="28"
         viewBox="0 0 24 28"
