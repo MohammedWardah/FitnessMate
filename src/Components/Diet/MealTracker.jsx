@@ -10,10 +10,10 @@ const MealTracker = () => {
   return (
     <>
       {/* TODO: Pages to view added food or add new */}
-      <DietComp img={breakfast} title={"Breakfast"} />
-      <DietComp img={launch} title={"Launch"} />
-      <DietComp img={dinner} title={"Dinner"} />
-      <DietComp img={snacks} title={"Snacks"} />
+      <DietComp img={breakfast} title={"Breakfast"} navigateTo={"add-breakfast"} />
+      <DietComp img={launch} title={"Launch"} navigateTo={"add-launch"} />
+      <DietComp img={dinner} title={"Dinner"} navigateTo={"add-dinner"} />
+      <DietComp img={snacks} title={"Snacks"} navigateTo={"add-snacks"} />
       <DietComp img={macros} title={"Macros"} navigateTo={"macros"} />
     </>
   );

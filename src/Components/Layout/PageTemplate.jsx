@@ -16,7 +16,9 @@ const PageTemplate = ({ title, back, subTitle, subTitleImg, children }) => {
       {back && <img src={back_arrow} onClick={handleBack} className={styles.backArrow} />}
       {subTitle && (
         <div className={styles.subTitle}>
-          <img src={subTitleImg} alt="" />
+          <div className={styles.imgContainer}>
+            <img src={subTitleImg} alt="" />
+          </div>
           <h2>{subTitle}</h2>
         </div>
       )}

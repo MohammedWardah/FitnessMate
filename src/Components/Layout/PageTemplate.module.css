@@ -22,9 +22,17 @@
   font-size: 1.5rem;
 }
 
-.subTitle img {
-  height: 35px;
+.imgContainer {
   width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subTitle img {
+  max-width: 35px;
+  max-height: 35px;
 }
 
 .bottomFiller {
