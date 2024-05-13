@@ -15,6 +15,9 @@
 
 .section span {
   font-size: 1.2rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .section img {
@@ -27,7 +30,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 45%;
+  min-width: 45%;
+  max-width: 45%;
 }
 
 .barCals,

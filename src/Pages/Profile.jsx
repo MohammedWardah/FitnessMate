@@ -1,5 +1,12 @@
+import PageTemplate from "../Components/Layout/PageTemplate";
+import Profile from "../Components/Profile/Profile";
+
 const ProfilePage = () => {
-  return <div>Profile</div>;
+  return (
+    <PageTemplate title={"Profile"}>
+      <Profile />
+    </PageTemplate>
+  );
 };
 
 export default ProfilePage;
