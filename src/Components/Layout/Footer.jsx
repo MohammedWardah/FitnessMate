@@ -17,15 +17,15 @@ const Footer = () => {
   useEffect(() => {
     const currentPath = location.pathname;
     setActiveLink({
-      diet: currentPath === "/Diet",
+      diet: currentPath.toLowerCase().includes("diet"),
       home: currentPath === "/",
-      watch: currentPath === "/Watch",
-      profile: currentPath === "/Profile",
+      watch: currentPath.toLowerCase().includes("watch"),
+      profile: currentPath.toLowerCase().includes("profile"),
     });
   }, [location.pathname]);
 
   // Navigate on icon click
-  const navigateAndSetActive = (link) => {
+  const navigateTo = (link) => {
     let path = "/";
     if (link === "Diet") path = "/Diet";
     else if (link === "Watch") path = "/Watch";
@@ -37,7 +37,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <svg
-        onClick={() => navigateAndSetActive("Diet")}
+        onClick={() => navigateTo("Diet")}
         className={activeLink.diet ? styles.active : ""}
         width="32"
         height="32"
@@ -74,7 +74,7 @@ const Footer = () => {
         />
       </svg>
       <svg
-        onClick={() => navigateAndSetActive("Home")}
+        onClick={() => navigateTo("Home")}
         className={activeLink.home ? styles.active : ""}
         width="28"
         height="28"
@@ -87,7 +87,7 @@ const Footer = () => {
         />
       </svg>
       <svg
-        onClick={() => navigateAndSetActive("Watch")}
+        onClick={() => navigateTo("Watch")}
         className={activeLink.watch ? styles.active : ""}
         width="36"
         height="36"
@@ -105,7 +105,7 @@ const Footer = () => {
         />
       </svg>
       <svg
-        onClick={() => navigateAndSetActive("Profile")}
+        onClick={() => navigateTo("Profile")}
         className={activeLink.profile ? styles.active : ""}
         width="24"
         height="28"
