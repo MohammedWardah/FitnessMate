@@ -1,5 +1,3 @@
-// import styles from "./Diet.module.css";
-
 import meal from "../../assets/UI/meal.png";
 import bottle from "../../assets/UI/bottle.png";
 import planner from "../../assets/UI/planner.png";
