@@ -1,6 +1,0 @@
-.add > div::after {
-  content: "+";
-  font-size: 2rem;
-  margin-left: auto;
-  margin-right: 1rem;
-}

@@ -9,7 +9,6 @@ import macros from "../../assets/UI/macros.png";
 const MealTracker = () => {
   return (
     <>
-      {/* TODO: Pages to view added food or add new */}
       <DietComp img={breakfast} title={"Breakfast"} navigateTo={"add-breakfast"} />
       <DietComp img={launch} title={"Launch"} navigateTo={"add-launch"} />
       <DietComp img={dinner} title={"Dinner"} navigateTo={"add-dinner"} />
