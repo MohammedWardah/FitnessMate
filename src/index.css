@@ -42,7 +42,7 @@ h6 {
 
   --footer-color: #121212;
 
-  --selection-color: #217f4a;
+  --selection-color: #008000;
 }
 
 button {
@@ -50,7 +50,8 @@ button {
 }
 
 button,
-input {
+input,
+select {
   border: none;
   outline: none;
 }

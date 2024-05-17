@@ -15,7 +15,14 @@ import D_addLaunch from "./Pages/D_addLaunch";
 import D_addDinner from "./Pages/D_addDinner";
 import D_addSnacks from "./Pages/D_addSnacks";
 import WatchPage from "./Pages/Watch";
+import W_myEvents from "./Pages/W_myEvents";
 import ProfilePage from "./Pages/Profile";
+import P_userInformation from "./Pages/P_userInformation";
+import P_goals from "./Pages/P_goals";
+import P_health from "./Pages/P_health";
+import P_prefrences from "./Pages/P_prefrences";
+import P_account from "./Pages/P_account";
+import P_history from "./Pages/P_history";
 
 const router = createBrowserRouter([
   { path: "/login", element: <LoginPage /> },
@@ -62,8 +69,27 @@ const router = createBrowserRouter([
           },
         ],
       },
-      { path: "Watch", element: <WatchPage /> },
-      { path: "Profile", element: <ProfilePage /> },
+      {
+        path: "Watch",
+        element: <Outlet />,
+        children: [
+          { index: true, element: <WatchPage /> },
+          { path: "my-events", element: <W_myEvents /> },
+        ],
+      },
+      {
+        path: "Profile",
+        element: <Outlet />,
+        children: [
+          { index: true, element: <ProfilePage /> },
+          { path: "user-information", element: <P_userInformation /> },
+          { path: "goals", element: <P_goals /> },
+          { path: "health", element: <P_health /> },
+          { path: "prefrences", element: <P_prefrences /> },
+          { path: "account", element: <P_account /> },
+          { path: "history", element: <P_history /> },
+        ],
+      },
     ],
   },
 ]);
