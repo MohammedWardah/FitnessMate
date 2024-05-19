@@ -6,7 +6,7 @@ function HorizontalBar({ label, fillLevel, fillColor, ind1, ind2, ind3 }) {
       <span>{label}</span>
       <div className={styles.barContainer}>
         <div
-          className={styles.barFill}
+          className={fillLevel === 100 ? styles.barFilled : styles.barFill}
           style={{ width: `${fillLevel}%`, backgroundColor: fillColor }}></div>
         <div className={styles.indicator}>
           <span>{ind1}</span>

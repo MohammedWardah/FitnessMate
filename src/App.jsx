@@ -83,7 +83,7 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <ProfilePage /> },
           { path: "user-information", element: <P_userInformation /> },
-          { path: "goals", element: <P_goals /> },
+          { path: "weekly-goals", element: <P_goals /> },
           { path: "health", element: <P_health /> },
           { path: "prefrences", element: <P_prefrences /> },
           { path: "account", element: <P_account /> },

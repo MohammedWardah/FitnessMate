@@ -5,7 +5,7 @@ import goal from "../assets/UI/goals.png";
 
 const P_goals = () => {
   return (
-    <PageTemplate back={true} subTitle={"Goals"} subTitleImg={goal}>
+    <PageTemplate back={true} subTitle={"Weekly goals"} subTitleImg={goal}>
       <Goals />
     </PageTemplate>
   );

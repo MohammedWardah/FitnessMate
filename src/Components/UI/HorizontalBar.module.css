@@ -28,6 +28,12 @@
   animation: fillAnimation 1s ease-out;
 }
 
+.barFilled {
+  height: 100%;
+  border-radius: 1rem;
+  animation: fillAnimation 1s ease-out;
+}
+
 @keyframes fillAnimation {
   0% {
     width: 0%;

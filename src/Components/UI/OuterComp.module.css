@@ -8,9 +8,21 @@
   overflow: hidden;
 }
 
-.component h1 {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
   text-align: center;
   font-size: 1.3rem;
   line-height: 2rem;
-  margin-bottom: 1rem;
+}
+
+.header img {
+  height: 24px;
+  width: 24px;
 }

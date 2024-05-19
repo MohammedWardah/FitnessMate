@@ -1,0 +1,81 @@
+/* Overview start */
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.section span {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.section img {
+  margin-right: 0.5rem;
+  width: 15px;
+  height: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 45%;
+  max-width: 45%;
+}
+
+.barCals,
+.barSteps,
+.barTime {
+  width: 55%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.barFillCals,
+.barFillSteps,
+.barFillTime {
+  border-radius: 5px;
+  height: 100%;
+  animation: fillAnimation 1s ease-out;
+}
+
+.barCals {
+  background-color: #31221b;
+}
+
+.barSteps {
+  background-color: #312a18;
+}
+
+.barTime {
+  background-color: #1f2932;
+}
+
+.barFillCals {
+  background-color: #c9611b;
+}
+
+.barFillSteps {
+  background-color: #e5ae00;
+}
+
+.barFillTime {
+  background-color: #44a5eb;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0%;
+  }
+}

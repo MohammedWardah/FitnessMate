@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <>
       <DietComp title={"User information"} img={user} navigateTo={"user-information"} />
-      <DietComp title={"Goals"} img={goals} navigateTo={"goals"} />
+      <DietComp title={"Goals"} img={goals} navigateTo={"weekly-goals"} />
       <DietComp title={"Health"} img={health} navigateTo={"health"} />
       <DietComp title={"Prefrences"} img={prefrences} navigateTo={"prefrences"} />
       <DietComp title={"Account settings"} img={settings} navigateTo={"account"} />
