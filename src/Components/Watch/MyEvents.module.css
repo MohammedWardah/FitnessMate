@@ -1,0 +1,61 @@
+.events {
+  background-color: var(--primary-comp-color);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+}
+
+.events h1 {
+  text-align: center;
+  color: inherit;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.event {
+  background-color: var(--secondary-comp-color);
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event span:first-of-type {
+  color: #972400;
+}
+
+.event span:last-of-type {
+  color: var(--secondary-font-color);
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.dayOfWeek {
+  text-align: center;
+  color: var(--secondary-font-color);
+}
+
+.day,
+.blank {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-comp-color);
+  color: var(--tertiary-font-color);
+  border-radius: 5px;
+}
+
+.blank {
+  background-color: transparent;
+}
+
+.day:nth-of-type(9n + 2) {
+  border: 1px solid #972400;
+}
+
+.day:nth-of-type(16n + 2) {
+  border: 1px solid #972400;
+}
