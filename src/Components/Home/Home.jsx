@@ -181,7 +181,7 @@ const Home = () => {
           </div>
         </section>
       </OuterComp>
-      <OuterComp height={180} title={"Sleep"}>
+      <OuterComp height={180} title={"Sleep tracker"}>
         <section className={styles.weekly}>
           <div>
             <p>Mon</p>
@@ -248,11 +248,11 @@ const Home = () => {
           </div>
         </section>
       </OuterComp>
-      <OuterComp height={150} title={"Body composition"}>
+      <OuterComp height={150} title={"Body weight & mass index"}>
         <HB3Levels label={"Weight"} fillLevel={50} ind1={60} ind2={80} />
         <HB3Levels label={"BMI"} fillLevel={26} ind1={18} ind2={25} />
       </OuterComp>
-      <OuterComp height={120} title={"Heart"}>
+      <OuterComp height={120} title={"Heart - Beats/Min"}>
         <HB3Levels label={"BPM"} fillColor={"#B71D39"} fillLevel={60} ind1={100} ind2={130} />
       </OuterComp>
       <OuterComp height={120} title={"Stress"}>

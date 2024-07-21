@@ -25,7 +25,6 @@ const Macros = () => {
               <div className={styles.barFillCals} style={{ width: `${80}%` }}></div>
             </div>
             <div className={styles.stats}>
-              <img src={""} alt="" />
               <span>
                 {"Carbs"}: {`${200}g`}
               </span>
@@ -36,7 +35,6 @@ const Macros = () => {
               <div className={styles.barFillSteps} style={{ width: `${40}%` }}></div>
             </div>
             <div className={styles.stats}>
-              <img src={""} alt="" />
               <span>
                 {"Fat"}: {`${95}g`}
               </span>
@@ -47,7 +45,6 @@ const Macros = () => {
               <div className={styles.barFillTime} style={{ width: `${85}%` }}></div>
             </div>
             <div className={styles.stats}>
-              <img src={""} alt="" />
               <span>
                 {"Protein"}: {`${240}g`}
               </span>
